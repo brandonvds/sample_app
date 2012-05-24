@@ -2,9 +2,10 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.3'
 
-group :development, :test do
+group :development do
   gem 'sqlite3', '1.3.5'
   gem 'rspec-rails', '2.9.0'
+  gem 'guard-rspec', '0.5.5'
   gem 'therubyracer'
   gem 'execjs'
 end
@@ -20,7 +21,11 @@ end
 gem 'jquery-rails', '2.0.0'
 
 group :test do
+  gem 'rspec-rails', '2.9.0'
   gem 'capybara', '1.1.2'
+  # System-dependent gems
+  gem 'guard-spork', '0.3.2'
+  gem 'spork', '0.9.0'
 end
 
 group :production do
