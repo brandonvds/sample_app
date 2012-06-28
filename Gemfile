@@ -1,5 +1,6 @@
-kkksource 'https://rubygems.org'
+source 'https://rubygems.org'
 
+gem 'therubyracer'
 gem 'rails', '3.2.6'
 gem 'bootstrap-sass', '2.0.0'
 gem 'bcrypt-ruby', '3.0.1'
@@ -38,3 +39,4 @@ end
 group :production do
   gem 'pg', '0.12.2'
 end
+
